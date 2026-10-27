@@ -16,7 +16,7 @@ app = FastMCP(
 
 @app.tool(title="Arc Cosine")
 def acos(x: Number) -> float:
-    """The acos tool returns the arc cosine value of a number"""
+    """Return the arc cosine of x in radians. x ∈ [-1, 1]"""
 
     if not -1 <= x <= 1:
         raise ValueError("x must be in the range -1 to 1")
@@ -26,153 +26,153 @@ def acos(x: Number) -> float:
 
 @app.tool(title="Inverse Hyperbolic Cosine")
 def acosh(x: Number) -> float:
-    """The acosh tool returns the inverse hyperbolic cosine of a number"""
+    """Return the inverse hyperbolic cosine of x. x ≥ 1"""
 
     return math.acosh(x)
 
 
 @app.tool(title="Arc Sine")
 def asin(x: Number) -> float:
-    """The asin tool returns the arc sine of a number"""
+    """Return the arc sine of x in radians. x ∈ [-1, 1]"""
 
     return math.asin(x)
 
 
 @app.tool(title="Inverse Hyperbolic Sine")
 def asinh(x: Number) -> float:
-    """The asinh tool returns the inverse hyperbolic sine of a number"""
+    """Return the inverse hyperbolic sine of x"""
 
     return math.asinh(x)
 
 
 @app.tool(title="Arc Tangent")
 def atan(x: Number) -> float:
-    """The atan tool returns the arc tangent of a number (x) as a numeric value between -PI/2 and PI/2 radians"""
+    """Return the arc tangent of x in radians, in (-π/2, π/2)"""
 
     return math.atan(x)
 
 
 @app.tool(title="Arc Tangent of y/x")
 def atan2(y: Number, x: Number) -> float:
-    """The atan2 tool returns the arc tangent of y/x, in radians. Where x and y are the coordinates of a point (x,y)"""
+    """Return atan2(y, x) in radians, in (-π, π]"""
 
     return math.atan2(y, x)
 
 
 @app.tool(title="Inverse Hyperbolic Tangent")
 def atanh(x: Number) -> float:
-    """The atanh tool returns the inverse hyperbolic tangent of a number"""
+    """Return the inverse hyperbolic tangent of x. x ∈ (-1, 1)"""
 
     return math.atanh(x)
 
 
 @app.tool(title="Round Up (Ceil)")
 def ceil(x: Number) -> float:
-    """The ceil tool rounds a number UP to the nearest integer, if necessary, and returns the result"""
+    """Round x up to the nearest integer"""
 
     return math.ceil(x)
 
 
 @app.tool(title="Cosine")
 def cos(x: Number) -> float:
-    """The cos tool returns the cosine of a number"""
+    """Return the cosine of x"""
 
     return math.cos(x)
 
 
 @app.tool(title="Hyperbolic Cosine")
 def cosh(x: Number) -> float:
-    """The cosh tool returns the hyperbolic cosine of a number (equivalent to (exp(number) + exp(-number)) / 2)"""
+    """Return the hyperbolic cosine of x"""
 
     return math.cosh(x)
 
 
 @app.tool(title="Radians to Degrees")
 def degrees(x: Number) -> float:
-    """The degrees method converts an angle from radians to degrees"""
+    """Convert angle x from radians to degrees"""
 
     return math.degrees(x)
 
 
 @app.tool(title="Round Down (Floor)")
 def floor(x: Number) -> float:
-    """The floor tool rounds a number DOWN to the nearest integer, if necessary, and returns the result"""
+    """Round x down to the nearest integer"""
 
     return math.floor(x)
 
 
 @app.tool(title="Base Logarithm")
 def log(x: Number, base: Number) -> float:
-    """The log tool returns the natural logarithm of a number, or the logarithm of number to base"""
+    """Return log of x with base y (natural log if you document it that way)"""
 
     return math.log(x, base)
 
 
 @app.tool(title="Base-10 Logarithm")
 def log10(x: Number) -> float:
-    """The log10 tool returns the base-10 logarithm of a number"""
+    """Return the base-10 logarithm of x"""
 
     return math.log10(x)
 
 
 @app.tool(title="Log of 1+x")
 def log1p(x: Number) -> float:
-    """The log1p tool returns log(1+number), computed in a way that is accurate even when the value of number is close to zero"""
+    """Return log(1 + x), accurate for small x"""
 
     return math.log1p(x)
 
 
 @app.tool(title="Base-2 Logarithm")
 def log2(x: Number) -> float:
-    """The log2 tool returns the base-2 logarithm of a number"""
+    """Return the base-2 logarithm of x"""
 
     return math.log2(x)
 
 
 @app.tool(title="Power (x^y)")
 def power(x: Number, y: Number) -> float:
-    """The power tool returns the value of x raised to power y"""
+    """Return x raised to the power y"""
 
     return math.pow(x, y)
 
 
 @app.tool(title="Degrees to Radians")
 def radians(x: Number) -> float:
-    """The radians tool converts a degree value into radians"""
+    """Convert angle x from degrees to radians"""
 
     return math.radians(x)
 
 
 @app.tool(title="Sine")
 def sin(x: Number) -> float:
-    """The sin tool returns the sine of a number"""
+    """Return the sine of x"""
 
     return math.sin(x)
 
 
 @app.tool(title="Hyperbolic Sine")
 def sinh(x: Number) -> float:
-    """The sinh tool returns the hyperbolic sine of a number"""
+    """Return the hyperbolic sine of x"""
 
     return math.sinh(x)
 
 
 @app.tool(title="Square Root")
 def square_root(x: Number) -> float:
-    """The square_root tool returns the square root of a number"""
+    """Return the square root of x"""
 
     return math.sqrt(x)
 
 
 @app.tool(title="Tangent")
 def tan(x: Number) -> float:
-    """The tan tool returns the tangent of a number"""
+    """Return the tangent of x"""
 
     return math.tan(x)
 
 
 @app.tool(title="Hyperbolic Tangent")
 def tanh(x: Number) -> float:
-    """The tanh tool returns the hyperbolic tangent of a number"""
+    """Return the hyperbolic tangent of x"""
 
     return math.tanh(x)
