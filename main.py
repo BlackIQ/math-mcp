@@ -1,11 +1,11 @@
 # Libs
-from typing import Annotated  # Types
 import math  # Math
 
 from fastmcp import FastMCP  # MCP Server
-from pydantic import Field  # Pydantic
 
-# Create MCP Server
+# Application
+from .types import Number  # Types
+
 app = FastMCP(
     name="Math MCP Server",
     version="0.1.0",
@@ -14,14 +14,8 @@ app = FastMCP(
 )
 
 
-@app.tool(
-    name="square_root",
-    title="Square Root",
-    description="Get square root of a number",
-)
-def square_root(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Square Root")
+def square_root(x: Number) -> float:
     """The square_root tool returns the square root of a number
 
     Args:
@@ -31,13 +25,8 @@ def square_root(
     return math.sqrt(x)
 
 
-@app.tool(
-    title="Power",
-)
-def power(
-    x: Annotated[float, Field(description="A float number")],
-    y: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Power")
+def power(x: Number, y: Number) -> float:
     """The power tool returns the value of x raised to power y
 
     Args:
@@ -48,10 +37,8 @@ def power(
     return math.pow(x, y)
 
 
-@app.tool(title="arc cosine value of x")
-def acos(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Arc Cosine")
+def acos(x: Number) -> float:
     """
     The acos tool returns the arc cosine value of a number
 
@@ -65,10 +52,8 @@ def acos(
     return math.acos(x)
 
 
-@app.tool(title="inverse hyperbolic cosine of x")
-def acosh(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Inverse Hyperbolic Cosine")
+def acosh(x: Number) -> float:
     """
     The acosh tool returns the inverse hyperbolic cosine of a number
 
@@ -81,10 +66,8 @@ def acosh(
     return math.acosh(x)
 
 
-@app.tool(title="arc sine of a x")
-def asin(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Arc Sine")
+def asin(x: Number) -> float:
     """
     The asin tool returns the arc sine of a number
 
@@ -98,10 +81,8 @@ def asin(
     return math.asin(x)
 
 
-@app.tool(title="inverse hyperbolic sine of x")
-def asinh(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Inverse Hyperbolic Sine")
+def asinh(x: Number) -> float:
     """
     The asinh tool returns the inverse hyperbolic sine of a number
 
@@ -112,10 +93,8 @@ def asinh(
     return math.asinh(x)
 
 
-@app.tool(title="arc tangent of x")
-def atan(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Arc Tangent")
+def atan(x: Number) -> float:
     """
     The atan tool returns the arc tangent of a number (x) as a numeric value between -PI/2 and PI/2 radians
 
@@ -128,11 +107,8 @@ def atan(
     return math.atan(x)
 
 
-@app.tool(title="arc tangent of x and y")
-def atan2(
-    y: Annotated[float, Field(description="A float number")],
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Arc Tangent of y/x")
+def atan2(y: Number, x: Number) -> float:
     """
     The atan2 tool returns the arc tangent of y/x, in radians. Where x and y are the coordinates of a point (x,y)
 
@@ -143,13 +119,11 @@ def atan2(
         - y: Required. Specifies a positive or negative number
     """
 
-    return math.atan2(x, y)
+    return math.atan2(y, x)
 
 
-@app.tool(title="inverse hyperbolic tangent of x")
-def atanh(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Inverse Hyperbolic Tangent")
+def atanh(x: Number) -> float:
     """
     The atanh tool returns the inverse hyperbolic tangent of a number
 
@@ -162,10 +136,8 @@ def atanh(
     return math.atanh(x)
 
 
-@app.tool(title="round up x")
-def ceil(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Ceil")
+def ceil(x: Number) -> float:
     """
     The ceil tool rounds a number UP to the nearest integer, if necessary, and returns the result
 
@@ -178,10 +150,8 @@ def ceil(
     return math.ceil(x)
 
 
-@app.tool(title="round down x")
-def floor(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Floor")
+def floor(x: Number) -> float:
     """
     The floor tool rounds a number DOWN to the nearest integer, if necessary, and returns the result
 
@@ -194,10 +164,8 @@ def floor(
     return math.floor(x)
 
 
-@app.tool(title="cosine of x")
-def cos(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Cosine")
+def cos(x: Number) -> float:
     """
     The cos tool returns the cosine of a number
 
@@ -208,10 +176,8 @@ def cos(
     return math.cos(x)
 
 
-@app.tool(title="hyperbolic cosine of x")
-def cosh(
-    x: Annotated[float, Field(description="A float number")],
-) -> float:
+@app.tool(title="Hyperbolic Cosine")
+def cosh(x: Number) -> float:
     """
     The cosh tool returns the hyperbolic cosine of a number (equivalent to (exp(number) + exp(-number)) / 2)
 
