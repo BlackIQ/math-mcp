@@ -103,7 +103,7 @@ def floor(x: Number) -> float:
 
 @app.tool(title="Base Logarithm")
 def log(x: Number, base: Number) -> float:
-    """Return log of x with base y (natural log if you document it that way)"""
+    """Return the logarithm of x with the given base."""
 
     return math.log(x, base)
 
