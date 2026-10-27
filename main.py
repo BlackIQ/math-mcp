@@ -4,13 +4,13 @@ import math  # Math
 from fastmcp import FastMCP  # MCP Server
 
 # Application
-from .types import Number  # Types
+from math_types import Number  # Types
 
 app = FastMCP(
     name="Math MCP Server",
     version="0.1.0",
-    instructions="Provides math calculations in your Agent, Assistent or local LLM",
-    website_url="math.amirhossein.info",
+    instructions="Provides math calculations in your Agent, Assistant or local LLM",
+    website_url="https://math.amirhossein.info",
 )
 
 
@@ -66,7 +66,7 @@ def atanh(x: Number) -> float:
     return math.atanh(x)
 
 
-@app.tool(title="Ceil")
+@app.tool(title="Round Up (Ceil)")
 def ceil(x: Number) -> float:
     """The ceil tool rounds a number UP to the nearest integer, if necessary, and returns the result"""
 
@@ -87,56 +87,56 @@ def cosh(x: Number) -> float:
     return math.cosh(x)
 
 
-@app.tool(title="Degrees")
+@app.tool(title="Radians to Degrees")
 def degrees(x: Number) -> float:
     """The degrees method converts an angle from radians to degrees"""
 
     return math.degrees(x)
 
 
-@app.tool(title="Floor")
+@app.tool(title="Round Down (Floor)")
 def floor(x: Number) -> float:
     """The floor tool rounds a number DOWN to the nearest integer, if necessary, and returns the result"""
 
     return math.floor(x)
 
 
-@app.tool(title="Logarithm")
-def log(x: Number, y: Number) -> float:
+@app.tool(title="Base Logarithm")
+def log(x: Number, base: Number) -> float:
     """The log tool returns the natural logarithm of a number, or the logarithm of number to base"""
 
-    return math.log(x, y)
+    return math.log(x, base)
 
 
-@app.tool(title="Logarithm")
+@app.tool(title="Base-10 Logarithm")
 def log10(x: Number) -> float:
     """The log10 tool returns the base-10 logarithm of a number"""
 
     return math.log10(x)
 
 
-@app.tool(title="Logarithm")
+@app.tool(title="Log of 1+x")
 def log1p(x: Number) -> float:
     """The log1p tool returns log(1+number), computed in a way that is accurate even when the value of number is close to zero"""
 
     return math.log1p(x)
 
 
-@app.tool(title="Logarithm")
+@app.tool(title="Base-2 Logarithm")
 def log2(x: Number) -> float:
     """The log2 tool returns the base-2 logarithm of a number"""
 
     return math.log2(x)
 
 
-@app.tool(title="Power")
+@app.tool(title="Power (x^y)")
 def power(x: Number, y: Number) -> float:
     """The power tool returns the value of x raised to power y"""
 
     return math.pow(x, y)
 
 
-@app.tool(title="Radians")
+@app.tool(title="Degrees to Radians")
 def radians(x: Number) -> float:
     """The radians tool converts a degree value into radians"""
 
