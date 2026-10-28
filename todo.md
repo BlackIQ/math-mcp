@@ -40,8 +40,8 @@ Tag: `log_exp`.
 
 | Name    | Status |
 | :------ | :----- |
-| exp()   | [ ]    |
-| expm1() | [ ]    |
+| exp()   | [x]    |
+| expm1() | [x]    |
 | log()   | [x]    |
 | log10() | [x]    |
 | log2()  | [x]    |
