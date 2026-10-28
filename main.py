@@ -418,6 +418,13 @@ def isnormal(x: float) -> bool:
     return math.isnormal(x)
 
 
+@app.tool(title="Is Subnormal", tags={"check"})
+def issubnormal(x: float) -> bool:
+    """Return True if x is a subnormal number"""
+
+    return math.issubnormal(x)
+
+
 # Aggregate / Misc
 
 
