@@ -93,8 +93,8 @@ Tag: `number`.
 | gcd()       | [x]    |
 | lcm()       | [x]    |
 | fma()       | [x]    |
-| fmin()      | [ ]    |
-| fmax()      | [ ]    |
+| fmin()      | [-]    |
+| fmax()      | [-]    |
 
 ## Distance / Norm
 
