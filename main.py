@@ -440,3 +440,10 @@ def ulp(x: float) -> float:
     """Return the value of the least significant bit of x (unit in the last place)."""
 
     return math.ulp(x)
+
+
+@app.tool(title="Next After", tags={"misc"})
+def nextafter(x: float, y: float, steps: int = 1) -> float:
+    """Return the float steps steps after x toward y"""
+
+    return math.nextafter(x, y, steps=steps)

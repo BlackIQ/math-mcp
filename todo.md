@@ -142,4 +142,4 @@ Tag: `misc`.
 | frexp()     | [x]    |
 | ldexp()     | [x]    |
 | ulp()       | [x]    |
-| nextafter() | [ ]    |
+| nextafter() | [x]    |
