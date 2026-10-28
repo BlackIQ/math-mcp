@@ -235,6 +235,13 @@ def trunc(x: float) -> int:
     return math.trunc(x)
 
 
+@app.tool(title="Modf", tags={"rounding"})
+def modf(x: float) -> tuple[float, float]:
+    """Return (fractional_part, integer_part) of x. Both keep the sign of x."""
+
+    return math.modf(x)
+
+
 # Combinatorics
 
 

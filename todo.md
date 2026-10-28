@@ -68,7 +68,7 @@ Tag: `rounding`.
 | ceil()  | [x]    |
 | floor() | [x]    |
 | trunc() | [x]    |
-| modf()  | [ ]    |
+| modf()  | [x]    |
 
 ## Combinatorics
 
