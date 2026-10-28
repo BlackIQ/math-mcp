@@ -437,7 +437,7 @@ def ldexp(x: float, i: int) -> float:
 
 @app.tool(title="Unit in Last Place", tags={"misc"})
 def ulp(x: float) -> float:
-    """Return the value of the least significant bit of x (unit in the last place)."""
+    """Return the value of the least significant bit of x (unit in the last place)"""
 
     return math.ulp(x)
 
