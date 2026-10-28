@@ -318,6 +318,13 @@ def fma(x: float, y: float, z: float) -> float:
     return math.fma(x, y, z)
 
 
+@app.tool(title="Float Max", tags={"number"})
+def fmax(x: float, y: float) -> float:
+    """Return the larger of x and y, treating NaNs as missing data"""
+
+    return math.fmax(x, y)
+
+
 # Distance / Norm
 
 
