@@ -128,7 +128,7 @@ Tag: `check`.
 | isclose()     | [x]    |
 | isnormal()    | [x]    |
 | issubnormal() | [x]    |
-| signbit()     | [-]    |
+| signbit()     | [x]    |
 
 ## Aggregate / Misc
 

@@ -425,6 +425,13 @@ def issubnormal(x: float) -> bool:
     return math.issubnormal(x)
 
 
+@app.tool(title="Sign Bit", tags={"check"})
+def signbit(x: float) -> bool:
+    """Return True if the sign bit of x is set (negative, including -0.0)"""
+
+    return math.signbit(x)
+
+
 # Aggregate / Misc
 
 
