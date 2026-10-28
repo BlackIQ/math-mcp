@@ -73,9 +73,9 @@ Tag: `combinatorics`.
 
 | Name        | Status |
 | :---------- | :----- |
-| factorial() | [ ]    |
-| comb()      | [ ]    |
-| perm()      | [ ]    |
+| factorial() | [x]    |
+| comb()      | [x]    |
+| perm()      | [x]    |
 
 ## Number ops
 
