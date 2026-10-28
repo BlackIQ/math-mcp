@@ -217,6 +217,13 @@ def floor(x: Number) -> float:
     return math.floor(x)
 
 
+@app.tool(title="truncated integer", tags={"rounding"})
+def trunc(x: Number) -> float:
+    """returns the truncated integer part of a number"""
+
+    return math.trunc(x)
+
+
 # Combinatorics
 
 # Number ops
