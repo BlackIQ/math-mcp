@@ -227,23 +227,23 @@ def trunc(x: Number) -> int:
 # Combinatorics
 
 
-@app.tool(title="factorial", tags={"combinatorics"})
-def factorial(x: int) -> int:
-    """returns the factorial of a number"""
+@app.tool(title="Factorial", tags={"combinatorics"})
+def factorial(n: int) -> int:
+    """Return n! (factorial of n). n must be >= 0"""
 
-    return math.factorial(x)
+    return math.factorial(n)
 
 
-@app.tool(title="combinations", tags={"combinatorics"})
-def combinations(n: int, k: int) -> int:
-    """returns the number of ways picking k unordered outcomes from n possibilities, without repetition, also known as combinations"""
+@app.tool(title="Combinations", tags={"combinatorics"})
+def comb(n: int, k: int) -> int:
+    """Return the number of ways to choose k items from n without order (n choose k)"""
 
     return math.comb(n, k)
 
 
-@app.tool(title="Perm", tags={"combinatorics"})
+@app.tool(title="Permutations", tags={"combinatorics"})
 def perm(n: int, k: int) -> int:
-    """returns the number of ways to choose k items from n items with order and without repetition"""
+    """Return the number of ways to choose k items from n with order (P(n, k))"""
 
     return math.perm(n, k)
 
@@ -253,18 +253,18 @@ def perm(n: int, k: int) -> int:
 # Distance / Norm
 
 
-@app.tool(title="hypot", tags={"geometry"})
-def hypot(x: Number, base: Number) -> float:
-    """returns the Euclidean norm. The Euclidian norm is the distance from the origin to the coordinates given"""
+@app.tool(title="Euclidean Norm", tags={"geometry"})
+def hypot(x: Number, y: Number) -> float:
+    """Return the Euclidean norm sqrt(x² + y²)"""
 
-    return math.hypot(x, base)
+    return math.hypot(x, y)
 
 
-@app.tool(title="dist", tags={"geometry"})
-def dist(n: int, k: int) -> int:
-    """returns the Euclidean distance between two points (p and q), where p and q are the coordinates of that point"""
+@app.tool(title="Euclidean Distance", tags={"geometry"})
+def dist(p: list[float], q: list[float]) -> float:
+    """Return the Euclidean distance between points p and q"""
 
-    return math.dist()
+    return math.dist(p, q)
 
 
 # Float checks
