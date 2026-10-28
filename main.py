@@ -193,6 +193,13 @@ def square_root(x: Number) -> float:
     return math.sqrt(x)
 
 
+@app.tool(title="iSquare Root", tags={"power"})
+def isquare_root(x: int) -> float:
+    """rounds a square root number downwards to the nearest integer"""
+
+    return math.isqrt(x)
+
+
 # Rounding
 
 
