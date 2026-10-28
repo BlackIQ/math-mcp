@@ -138,6 +138,13 @@ def exp(x: float) -> float:
     return math.exp(x)
 
 
+@app.tool(title="Exp2 (2^x)", tags={"log_exp"})
+def exp2(x: float) -> float:
+    """Return 2 raised to the power of x"""
+
+    return math.exp2(x)
+
+
 @app.tool(title="Exp Minus 1", tags={"log_exp"})
 def expm1(x: float) -> float:
     """Return e^x - 1, accurate for small x"""

@@ -41,7 +41,7 @@ Tag: `log_exp`.
 | Name    | Status |
 | :------ | :----- |
 | exp()   | [x]    |
-| exp2()  | [ ]    |
+| exp2()  | [x]    |
 | expm1() | [x]    |
 | log()   | [x]    |
 | log10() | [x]    |
