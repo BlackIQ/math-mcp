@@ -141,5 +141,5 @@ Tag: `misc`.
 | sumprod()   | [x]    |
 | frexp()     | [x]    |
 | ldexp()     | [x]    |
-| ulp()       | [ ]    |
+| ulp()       | [x]    |
 | nextafter() | [ ]    |
