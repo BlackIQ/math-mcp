@@ -41,6 +41,7 @@ Tag: `log_exp`.
 | Name    | Status |
 | :------ | :----- |
 | exp()   | [x]    |
+| exp2()  | [ ]    |
 | expm1() | [x]    |
 | log()   | [x]    |
 | log10() | [x]    |
@@ -55,6 +56,7 @@ Tag: `power`.
 | :------ | :----- |
 | pow()   | [x]    |
 | sqrt()  | [x]    |
+| cbrt()  | [ ]    |
 | isqrt() | [x]    |
 
 ## Rounding
@@ -66,6 +68,7 @@ Tag: `rounding`.
 | ceil()  | [x]    |
 | floor() | [x]    |
 | trunc() | [x]    |
+| modf()  | [ ]    |
 
 ## Combinatorics
 
@@ -88,6 +91,10 @@ Tag: `number`.
 | fmod()      | [x]    |
 | remainder() | [x]    |
 | gcd()       | [x]    |
+| lcm()       | [ ]    |
+| fma()       | [ ]    |
+| fmin()      | [ ]    |
+| fmax()      | [ ]    |
 
 ## Distance / Norm
 
@@ -113,20 +120,26 @@ Tag: `special`.
 
 Tag: `check`.
 
-| Name       | Status |
-| :--------- | :----- |
-| isfinite() | [x]    |
-| isinf()    | [x]    |
-| isnan()    | [x]    |
-| isclose()  | [x]    |
+| Name          | Status |
+| :------------ | :----- |
+| isfinite()    | [x]    |
+| isinf()       | [x]    |
+| isnan()       | [x]    |
+| isclose()     | [x]    |
+| isnormal()    | [ ]    |
+| issubnormal() | [ ]    |
+| signbit()     | [ ]    |
 
 ## Aggregate / Misc
 
 Tag: `misc`.
 
-| Name    | Status |
-| :------ | :----- |
-| fsum()  | [x]    |
-| prod()  | [x]    |
-| frexp() | [x]    |
-| ldexp() | [x]    |
+| Name        | Status |
+| :---------- | :----- |
+| fsum()      | [x]    |
+| prod()      | [x]    |
+| sumprod()   | [ ]    |
+| frexp()     | [x]    |
+| ldexp()     | [x]    |
+| ulp()       | [ ]    |
+| nextafter() | [ ]    |
