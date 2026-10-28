@@ -95,8 +95,8 @@ Tag: `geometry`.
 
 | Name    | Status |
 | :------ | :----- |
-| hypot() | [ ]    |
-| dist()  | [ ]    |
+| hypot() | [x]    |
+| dist()  | [x]    |
 
 ## Special functions
 
