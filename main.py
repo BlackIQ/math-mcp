@@ -267,6 +267,37 @@ def dist(p: list[float], q: list[float]) -> float:
     return math.dist(p, q)
 
 
+# Special functions
+
+
+@app.tool(title="erf", tags={"special"})
+def erf(x: Number) -> float:
+    """returns the error function of a number"""
+
+    return math.erf(x)
+
+
+@app.tool(title="erfc", tags={"special"})
+def erfc(x: Number) -> float:
+    """returns the complementary error function of a number"""
+
+    return math.erfc(x)
+
+
+@app.tool(title="gamma", tags={"special"})
+def gamma(x: Number) -> float:
+    """returns the gamma function at a number"""
+
+    return math.gamma(x)
+
+
+@app.tool(title="lgamma", tags={"special"})
+def lgamma(x: Number) -> float:
+    """returns the natural logarithm gamma value of a number"""
+
+    return math.lgamma(x)
+
+
 # Float checks
 
 # Aggregate / Misc
