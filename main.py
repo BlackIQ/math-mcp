@@ -226,6 +226,28 @@ def trunc(x: Number) -> int:
 
 # Combinatorics
 
+
+@app.tool(title="factorial", tags={"combinatorics"})
+def factorial(x: int) -> int:
+    """returns the factorial of a number"""
+
+    return math.factorial(x)
+
+
+@app.tool(title="combinations", tags={"combinatorics"})
+def combinations(n: int, k: int) -> int:
+    """returns the number of ways picking k unordered outcomes from n possibilities, without repetition, also known as combinations"""
+
+    return math.comb(n, k)
+
+
+@app.tool(title="Perm", tags={"combinatorics"})
+def perm(n: int, k: int) -> int:
+    """returns the number of ways to choose k items from n items with order and without repetition"""
+
+    return math.perm(n, k)
+
+
 # Number ops
 
 # Distance / Norm
