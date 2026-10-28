@@ -138,7 +138,7 @@ Tag: `misc`.
 | :---------- | :----- |
 | fsum()      | [x]    |
 | prod()      | [x]    |
-| sumprod()   | [ ]    |
+| sumprod()   | [x]    |
 | frexp()     | [x]    |
 | ldexp()     | [x]    |
 | ulp()       | [ ]    |

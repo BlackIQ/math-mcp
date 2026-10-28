@@ -414,6 +414,13 @@ def prod(values: list[float]) -> float:
     return math.prod(values)
 
 
+@app.tool(title="Sum of Products", tags={"misc"})
+def sumprod(p: list[float], q: list[float]) -> float:
+    """Return the sum of products Σ p[i] * q[i]"""
+
+    return math.sumprod(p, q)
+
+
 @app.tool(title="Mantissa and Exponent", tags={"misc"})
 def frexp(x: float) -> tuple[float, int]:
     """Return (m, e) such that x == m * 2**e, with 0.5 <= abs(m) < 1 (or zero)"""
