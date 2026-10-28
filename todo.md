@@ -126,9 +126,9 @@ Tag: `check`.
 | isinf()       | [x]    |
 | isnan()       | [x]    |
 | isclose()     | [x]    |
-| isnormal()    | [ ]    |
-| issubnormal() | [ ]    |
-| signbit()     | [ ]    |
+| isnormal()    | [-]    |
+| issubnormal() | [-]    |
+| signbit()     | [-]    |
 
 ## Aggregate / Misc
 
