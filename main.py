@@ -134,6 +134,13 @@ def degrees(x: Number) -> float:
 # Log / Exp
 
 
+@app.tool(title="E raised to the power of x (Ex)", tags={"log_exp"})
+def exp(x: Number) -> float:
+    """returns E raised to the power of x (Ex)"""
+
+    return math.exp(x)
+
+
 @app.tool(title="Base Logarithm", tags={"log_exp"})
 def log(x: Number, base: Number) -> float:
     """Return the logarithm of x with the given base."""
