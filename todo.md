@@ -104,10 +104,10 @@ Tag: `special`.
 
 | Name     | Status |
 | :------- | :----- |
-| erf()    | [ ]    |
-| erfc()   | [ ]    |
-| gamma()  | [ ]    |
-| lgamma() | [ ]    |
+| erf()    | [x]    |
+| erfc()   | [x]    |
+| gamma()  | [x]    |
+| lgamma() | [x]    |
 
 ## Float checks
 
