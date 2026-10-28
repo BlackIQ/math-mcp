@@ -1,0 +1,23 @@
+site_name: Math MCP
+site_url: https://blackiq.github.io/math-mcp/
+repo_url: https://github.com/BlackIQ/math-mcp
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Dark mode
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Light mode
+
+nav:
+  - Home: index.md
+  - Install: install.md
+  - Tools: tools.md
+  - Examples: examples.md
