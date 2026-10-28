@@ -91,7 +91,7 @@ Tag: `number`.
 | fmod()      | [x]    |
 | remainder() | [x]    |
 | gcd()       | [x]    |
-| lcm()       | [ ]    |
+| lcm()       | [x]    |
 | fma()       | [ ]    |
 | fmin()      | [ ]    |
 | fmax()      | [ ]    |

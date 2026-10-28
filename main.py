@@ -237,7 +237,7 @@ def trunc(x: float) -> int:
 
 @app.tool(title="Modf", tags={"rounding"})
 def modf(x: float) -> tuple[float, float]:
-    """Return (fractional_part, integer_part) of x. Both keep the sign of x."""
+    """Return (fractional_part, integer_part) of x. Both keep the sign of x"""
 
     return math.modf(x)
 
@@ -302,6 +302,13 @@ def gcd(a: int, b: int) -> int:
     """Return the greatest common divisor of a and b"""
 
     return math.gcd(a, b)
+
+
+@app.tool(title="Least Common Multiple", tags={"number"})
+def lcm(a: int, b: int) -> int:
+    """Return the least common multiple of a and b"""
+
+    return math.lcm(a, b)
 
 
 # Distance / Norm
