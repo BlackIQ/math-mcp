@@ -197,6 +197,13 @@ def sqrt(x: float) -> float:
     return math.sqrt(x)
 
 
+@app.tool(title="Cube Root", tags={"power"})
+def cbrt(x: float) -> float:
+    """Return the cube root of x"""
+
+    return math.cbrt(x)
+
+
 @app.tool(title="Integer Square Root", tags={"power"})
 def isqrt(x: int) -> int:
     """Return the integer square root of x"""

@@ -56,7 +56,7 @@ Tag: `power`.
 | :------ | :----- |
 | pow()   | [x]    |
 | sqrt()  | [x]    |
-| cbrt()  | [ ]    |
+| cbrt()  | [x]    |
 | isqrt() | [x]    |
 
 ## Rounding
