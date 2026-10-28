@@ -83,11 +83,11 @@ Tag: `number`.
 
 | Name        | Status |
 | :---------- | :----- |
-| fabs()      | [ ]    |
-| copysign()  | [ ]    |
-| fmod()      | [ ]    |
-| remainder() | [ ]    |
-| gcd()       | [ ]    |
+| fabs()      | [x]    |
+| copysign()  | [x]    |
+| fmod()      | [x]    |
+| remainder() | [x]    |
+| gcd()       | [x]    |
 
 ## Distance / Norm
 

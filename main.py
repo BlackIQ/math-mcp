@@ -250,6 +250,42 @@ def perm(n: int, k: int) -> int:
 
 # Number ops
 
+
+@app.tool(title="Absolute Value", tags={"number"})
+def fabs(x: Number) -> float:
+    """Return the absolute value of x as a float"""
+
+    return math.fabs(x)
+
+
+@app.tool(title="Copy Sign", tags={"number"})
+def copysign(x: Number, y: Number) -> float:
+    """Return a float with the magnitude of x and the sign of y"""
+
+    return math.copysign(x, y)
+
+
+@app.tool(title="Float Modulo", tags={"number"})
+def fmod(x: Number, y: Number) -> float:
+    """Return the remainder of x/y, with the sign of x (platform C fmod)"""
+
+    return math.fmod(x, y)
+
+
+@app.tool(title="Remainder", tags={"number"})
+def remainder(x: Number, y: Number) -> float:
+    """Return the IEEE 754-style remainder of x with respect to y"""
+
+    return math.remainder(x, y)
+
+
+@app.tool(title="Greatest Common Divisor", tags={"number"})
+def gcd(a: int, b: int) -> int:
+    """Return the greatest common divisor of a and b"""
+
+    return math.gcd(a, b)
+
+
 # Distance / Norm
 
 
