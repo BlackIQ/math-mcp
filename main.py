@@ -311,6 +311,13 @@ def lcm(a: int, b: int) -> int:
     return math.lcm(a, b)
 
 
+@app.tool(title="Fused Multiply-Add", tags={"number"})
+def fma(x: float, y: float, z: float) -> float:
+    """Return (x * y) + z with a single rounding (fused multiply-add)"""
+
+    return math.fma(x, y, z)
+
+
 # Distance / Norm
 
 

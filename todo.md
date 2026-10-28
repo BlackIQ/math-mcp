@@ -92,7 +92,7 @@ Tag: `number`.
 | remainder() | [x]    |
 | gcd()       | [x]    |
 | lcm()       | [x]    |
-| fma()       | [ ]    |
+| fma()       | [x]    |
 | fmin()      | [ ]    |
 | fmax()      | [ ]    |
 
