@@ -115,10 +115,10 @@ Tag: `check`.
 
 | Name       | Status |
 | :--------- | :----- |
-| isfinite() | [ ]    |
-| isinf()    | [ ]    |
-| isnan()    | [ ]    |
-| isclose()  | [ ]    |
+| isfinite() | [x]    |
+| isinf()    | [x]    |
+| isnan()    | [x]    |
+| isclose()  | [x]    |
 
 ## Aggregate / Misc
 
