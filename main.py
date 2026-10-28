@@ -141,9 +141,16 @@ def exp(x: Number) -> float:
     return math.exp(x)
 
 
+@app.tool(title="returns Ex - 1", tags={"log_exp"})
+def expm1(x: Number) -> float:
+    """returns Ex - 1"""
+
+    return math.expm1(x)
+
+
 @app.tool(title="Base Logarithm", tags={"log_exp"})
 def log(x: Number, base: Number) -> float:
-    """Return the logarithm of x with the given base."""
+    """Return the logarithm of x with the given base"""
 
     return math.log(x, base)
 
