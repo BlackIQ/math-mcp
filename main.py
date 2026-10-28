@@ -340,10 +340,10 @@ def fsum(values: list[float]) -> float:
 
 
 @app.tool(title="Product", tags={"misc"})
-def prod(values: list[float], start: Number = 1) -> float:
+def prod(values: list[float]) -> float:
     """Return the product of all values, multiplied by start"""
 
-    return math.prod(values, start=start)
+    return math.prod(values)
 
 
 @app.tool(title="Mantissa and Exponent", tags={"misc"})
