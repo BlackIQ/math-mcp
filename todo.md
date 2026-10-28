@@ -55,7 +55,7 @@ Tag: `power`.
 | :------ | :----- |
 | pow()   | [x]    |
 | sqrt()  | [x]    |
-| isqrt() | [ ]    |
+| isqrt() | [x]    |
 
 ## Rounding
 
@@ -65,7 +65,7 @@ Tag: `rounding`.
 | :------ | :----- |
 | ceil()  | [x]    |
 | floor() | [x]    |
-| trunc() | [ ]    |
+| trunc() | [x]    |
 
 ## Combinatorics
 
