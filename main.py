@@ -270,34 +270,63 @@ def dist(p: list[float], q: list[float]) -> float:
 # Special functions
 
 
-@app.tool(title="erf", tags={"special"})
+@app.tool(title="Error Function", tags={"special"})
 def erf(x: Number) -> float:
-    """returns the error function of a number"""
+    """Return the error function of x"""
 
     return math.erf(x)
 
 
-@app.tool(title="erfc", tags={"special"})
+@app.tool(title="Complementary Error Function", tags={"special"})
 def erfc(x: Number) -> float:
-    """returns the complementary error function of a number"""
+    """Return the complementary error function of x"""
 
     return math.erfc(x)
 
 
-@app.tool(title="gamma", tags={"special"})
+@app.tool(title="Gamma", tags={"special"})
 def gamma(x: Number) -> float:
-    """returns the gamma function at a number"""
+    """Return the gamma function at x"""
 
     return math.gamma(x)
 
 
-@app.tool(title="lgamma", tags={"special"})
+@app.tool(title="Log Gamma", tags={"special"})
 def lgamma(x: Number) -> float:
-    """returns the natural logarithm gamma value of a number"""
+    """Return the natural logarithm of the absolute value of gamma(x)"""
 
     return math.lgamma(x)
 
 
 # Float checks
+
+
+@app.tool(title="Is Finite", tags={"check"})
+def isfinite(x: Number) -> bool:
+    """Return True if x is finite (not inf and not NaN)"""
+
+    return math.isfinite(x)
+
+
+@app.tool(title="Is Infinite", tags={"check"})
+def isinf(x: Number) -> bool:
+    """Return True if x is positive or negative infinity"""
+
+    return math.isinf(x)
+
+
+@app.tool(title="Is NaN", tags={"check"})
+def isnan(x: Number) -> bool:
+    """Return True if x is NaN (Not a Number)"""
+
+    return math.isnan(x)
+
+
+@app.tool(title="Is Close", tags={"check"})
+def isclose(a: Number, b: Number) -> bool:
+    """Return True if a and b are close within a relative/absolute tolerance"""
+
+    return math.isclose(a, b)
+
 
 # Aggregate / Misc
