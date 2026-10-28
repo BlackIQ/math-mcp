@@ -134,16 +134,16 @@ def degrees(x: Number) -> float:
 # Log / Exp
 
 
-@app.tool(title="E raised to the power of x (Ex)", tags={"log_exp"})
+@app.tool(title="Exponential (e^x)", tags={"log_exp"})
 def exp(x: Number) -> float:
-    """returns E raised to the power of x (Ex)"""
+    """Return e raised to the power of x"""
 
     return math.exp(x)
 
 
-@app.tool(title="returns Ex - 1", tags={"log_exp"})
+@app.tool(title="Exp Minus 1", tags={"log_exp"})
 def expm1(x: Number) -> float:
-    """returns Ex - 1"""
+    """Return e^x - 1, accurate for small x"""
 
     return math.expm1(x)
 
@@ -187,15 +187,15 @@ def power(x: Number, y: Number) -> float:
 
 
 @app.tool(title="Square Root", tags={"power"})
-def square_root(x: Number) -> float:
+def sqrt(x: Number) -> float:
     """Return the square root of x"""
 
     return math.sqrt(x)
 
 
-@app.tool(title="iSquare Root", tags={"power"})
-def isquare_root(x: int) -> float:
-    """rounds a square root number downwards to the nearest integer"""
+@app.tool(title="Integer Square Root", tags={"power"})
+def isqrt(x: int) -> int:
+    """Return the integer square root of x"""
 
     return math.isqrt(x)
 
@@ -217,9 +217,9 @@ def floor(x: Number) -> float:
     return math.floor(x)
 
 
-@app.tool(title="truncated integer", tags={"rounding"})
-def trunc(x: Number) -> float:
-    """returns the truncated integer part of a number"""
+@app.tool(title="Truncate", tags={"rounding"})
+def trunc(x: Number) -> int:
+    """Return the truncated integer part of x (toward zero)"""
 
     return math.trunc(x)
 
