@@ -94,7 +94,7 @@ Tag: `number`.
 | lcm()       | [x]    |
 | fma()       | [x]    |
 | fmin()      | [x]    |
-| fmax()      | [-]    |
+| fmax()      | [x]    |
 
 ## Distance / Norm
 
