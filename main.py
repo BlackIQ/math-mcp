@@ -411,6 +411,13 @@ def isclose(a: float, b: float) -> bool:
     return math.isclose(a, b)
 
 
+@app.tool(title="Is Normal", tags={"check"})
+def isnormal(x: float) -> bool:
+    """Return True if x is a normal number (finite, nonzero, not subnormal)"""
+
+    return math.isnormal(x)
+
+
 # Aggregate / Misc
 
 
