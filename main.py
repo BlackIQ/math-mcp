@@ -330,3 +330,31 @@ def isclose(a: Number, b: Number) -> bool:
 
 
 # Aggregate / Misc
+
+
+@app.tool(title="Accurate Sum", tags={"misc"})
+def fsum(values: list[float]) -> float:
+    """Return an accurate floating-point sum of the values"""
+
+    return math.fsum(values)
+
+
+@app.tool(title="Product", tags={"misc"})
+def prod(values: list[float], start: Number = 1) -> float:
+    """Return the product of all values, multiplied by start"""
+
+    return math.prod(values, start=start)
+
+
+@app.tool(title="Mantissa and Exponent", tags={"misc"})
+def frexp(x: Number) -> tuple[float, int]:
+    """Return (m, e) such that x == m * 2**e, with 0.5 <= abs(m) < 1 (or zero)"""
+
+    return math.frexp(x)
+
+
+@app.tool(title="Load Exponent", tags={"misc"})
+def ldexp(x: Number, i: int) -> float:
+    """Return x * (2**i). Inverse of frexp"""
+
+    return math.ldexp(x, i)

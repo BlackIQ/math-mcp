@@ -126,7 +126,7 @@ Tag: `misc`.
 
 | Name    | Status |
 | :------ | :----- |
-| fsum()  | [ ]    |
-| prod()  | [ ]    |
-| frexp() | [ ]    |
-| ldexp() | [ ]    |
+| fsum()  | [x]    |
+| prod()  | [x]    |
+| frexp() | [x]    |
+| ldexp() | [x]    |
