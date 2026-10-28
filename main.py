@@ -252,6 +252,21 @@ def perm(n: int, k: int) -> int:
 
 # Distance / Norm
 
+
+@app.tool(title="hypot", tags={"geometry"})
+def hypot(x: Number, base: Number) -> float:
+    """returns the Euclidean norm. The Euclidian norm is the distance from the origin to the coordinates given"""
+
+    return math.hypot(x, base)
+
+
+@app.tool(title="dist", tags={"geometry"})
+def dist(n: int, k: int) -> int:
+    """returns the Euclidean distance between two points (p and q), where p and q are the coordinates of that point"""
+
+    return math.dist()
+
+
 # Float checks
 
 # Aggregate / Misc
